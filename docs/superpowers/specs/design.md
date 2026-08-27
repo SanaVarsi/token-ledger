@@ -76,3 +76,14 @@ tool needs to bend, not break.
 This tool never sends your data anywhere. It only reads files already on
 your computer, and only writes a report file also on your computer. That's
 a main selling point of this project, not a small detail.
+
+## Update (Aug 27, 2026) — scope change
+Originally planned: `/cost-report` command + HTML dashboard.
+After researching existing tools - specifically `ccusage` (a popular CLI tool
+that already covers historical cost reporting well, by day/month/session) and
+Claude Code's own built-in `/usage` and `/insights` commands - the real gap
+isn't historical reporting, it's a **live, in-session view** of cost broken
+down by skill/plugin/tool, which none of these provide. Dropping the HTML
+dashboard and `/cost-report` command from v1. New v1 goal: a status-line
+script showing cost + skill/plugin/tool breakdown, updating automatically
+after each message.
