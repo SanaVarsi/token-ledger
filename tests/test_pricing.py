@@ -23,3 +23,15 @@ def test_returns_zero_for_unknown_model():
     )
 
     assert cost == 0.0
+
+
+def test_estimates_cost_for_fable_model():
+    cost = estimate_cost(
+        model="claude-fable-5",
+        input_tokens=1_000_000,
+        output_tokens=1_000_000,
+        cache_creation_tokens=0,
+        cache_read_tokens=0,
+    )
+
+    assert cost == 60.0
