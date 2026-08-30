@@ -1,6 +1,8 @@
 # Token Ledger — v1.0.0 Design
 (Written Aug 26, 2026)
 
+**Note: scope was revised on Aug 27 — see the update at the end of this doc for what is actually being built.**
+
 ## What this is
 A Claude Code plugin that reads your own Claude Code session log files and
 shows a report of where your tokens and money went — split by skill, plugin,
